@@ -1,6 +1,6 @@
 # Dashboard
 
-A dashboard for apps, bookmarks and search engine links. I used [dashboard](https://github.com/phntxx/dashboard) for a long time. Dashboard is deprecated and liked espacially the search bar feature.
+A dashboard for apps, bookmarks and search engine links. I used [dashboard](https://github.com/phntxx/dashboard) for a long time. Dashboard is deprecated and I liked espacially the search bar feature.
 
 In the end I copied the idea and implemented this one.
 
