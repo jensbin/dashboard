@@ -1,0 +1,187 @@
+app_categories:
+  - name: Development
+    apps:
+      - name: DevDocs
+        url: https://devdocs.io/
+        display_url: devdocs.io
+        icon: fa fa-code
+      - name: Stack Overflow
+        url: https://stackoverflow.com/
+        display_url: stackoverflow.com
+        icon: fa fa-stack-overflow
+  - name: Automotive
+    apps:
+      - name: OBD Fusion
+        url: obd://
+        display_url: OBD Fusion (Local)
+        icon: fa fa-car
+      - name: TeslaFi
+        url: https://teslafi.com/
+        display_url: teslafi.com
+        icon: fa fa-bolt
+  - name: Space
+    apps:
+      - name: Stellarium Web
+        url: https://stellarium-web.org/
+        display_url: stellarium-web.org
+        icon: fa fa-rocket
+      - name: Heavens-Above
+        url: https://www.heavens-above.com/
+        display_url: heavens-above.com
+        icon: fa fa-satellite
+bookmark_groups:
+  - name: News
+    bookmarks:
+      - name: Ground News
+        url: https://ground.news/interest/europe
+      - name: heise.de
+        url: https://heise.de/newsticker
+      - name: Ars Technica (Space)
+        url: https://arstechnica.com/science/space/
+  - name: Automotive
+    bookmarks:
+      - name: Car and Driver
+        url: https://www.caranddriver.com/
+      - name: MotorTrend
+        url: https://www.motortrend.com/
+      - name: EV Database
+        url: https://ev-database.org/
+      - name: Local Parts Supplier (Example)
+        url: https://www.example-parts-supplier.com/
+  - name: Space Exploration
+    bookmarks:
+      - name: SpaceX
+        url: https://www.spacex.com/
+      - name: NASA
+        url: https://www.nasa.gov/
+      - name: ESA
+        url: https://www.esa.int/
+      - name: JAXA
+        url: https://global.jaxa.jp/
+      - name: Space.com
+        url: https://www.space.com/
+      - name: Sky & Telescope
+        url: https://skyandtelescope.org/
+  - name: Development - IT Security
+    bookmarks:
+      - name: OWASP
+        url: https://owasp.org/
+      - name: SANS Institute
+        url: https://www.sans.org/
+      - name: Have I Been Pwned
+        url: https://haveibeenpwned.com/
+  - name:  Development - APIs
+    bookmarks:
+      - name:  Swagger Editor
+        url: https://editor.swagger.io/
+      - name: Postman 
+        url:  https://www.postman.com/
+  - name: Shopping
+    bookmarks:
+      - name: Amazon
+        url: https://www.amazon.de
+      - name: Indiegogo
+        url: https://www.indiegogo.com/
+      - name: AliExpress
+        url: https://www.aliexpress.us/?_randl_shipto=CH
+  - name: Finance
+    bookmarks:
+      - name: Bitcoin Monitor
+        url: https://bitcoinmonitor.app/price/BTCEUR
+      - name: Kraken
+        url: https://www.kraken.com
+  - name: Media
+    bookmarks:
+      - name: LinkedIn
+        url: https://www.linkedin.com/login
+      - name: YouTube
+        url: https://redirect.invidious.io/
+  - name: Hosting
+    bookmarks:
+      - name: Fly.io
+        url: https://fly.io
+      - name: AWS Lightsail
+        url: https://aws.amazon.com/lightsail
+      - name: DigitalOcean
+        url: https://cloud.digitalocean.com
+      - name: Exoscale
+        url: https://portal.exoscale.com/
+      - name: Cloudflare
+        url: https://dash.cloudflare.com
+      - name: Backblaze
+        url: https://secure.backblaze.com/user_signin.htm
+  - name: Hardware
+    bookmarks:
+      - name: Frame.work
+        url: https://community.frame.work/
+      - name: Purism
+        url: https://puri.sm/
+      - name: System76
+        url: https://system76.com/
+      - name: StarLite
+        url: https://ch.starlabs.systems
+      - name: Tuxedo
+        url: https://www.tuxedocomputers.com/
+  - name: Development
+    bookmarks:
+      - name: Material Design Icons
+        url: https://pictogrammers.com/library/mdi/
+      - name: Material Icons
+        url: https://fonts.google.com/icons?selected=Material+Icons
+      - name: Font Awesome
+        url: https://fontawesome.com/v6/search?o=r&m=free
+      - name: Gitlab
+        url: https://gitlab.com/jensbin
+      - name: GitHub
+        url: https://github.com/jensbin
+      - name: Fonts
+        url: https://www.programmingfonts.org/#ia-writer-mono
+      - name: ASCIIFlow
+        url: https://asciiflow.com/#/
+      - name: Regexp 101
+        url: https://regex101.com/
+  - name: Maps
+    bookmarks:
+      - name: Bike Maps
+        url: https://brouter.de/brouter-web/#map=15/47.3690/8.4577/standard,route-quality&profile=fastbike-lowtraffic
+      - name: OpenStreetMap
+        url: https://www.openstreetmap.org/
+      - name: Maps of Switzerland
+        url: https://map.geo.admin.ch/index.html?lang=en&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,true&layers_timestamp=18641231,,,&E=2701846.09&N=1227197.68&zoom=6.958779984634367&layers_opacity=1,1,1,0.8
+      - name: ZoomMaps
+        url: https://zoom.earth/
+      - name: Image Wayback
+        url: https://livingatlas.arcgis.com/wayback/#active=7110&ext=-115.33391,36.04266,-115.26309,36.08533
+      - name: Sentinel
+        url: https://apps.sentinel-hub.com/sentinel-playground/?source=S2L2A&lat=44.870228&lng=13.845530999999937&zoom=15&preset=null&layers=B01,B02,B03&maxcc=99.25&gain=1.0&gamma=1.0&time=2022-02-01%7C2022-08-09&atmFilter=&showDates=false
+  - name: Others
+    bookmarks:
+      - name: Translate
+        url: https://translate.google.com/?sl=auto&tl=en&op=translate
+      - name: AmIUnique
+        url: https://amiunique.org/
+      - name: PrivacyTools
+        url: https://www.privacytools.io/
+      - name: AweSome Selfhosted
+        url: https://github.com/awesome-selfhosted/awesome-selfhosted
+      - name: TimeZones
+        url: https://everytimezone.com/
+search:
+  - name: DuckDuckGo
+    url: https://duckduckgo.com/?q=
+    prefix: /d
+  - name: leo
+    url: https://dict.leo.org/german-english/
+    prefix: /dict
+  - name: Alternative.to
+    url: https://alternativeto.net/browse/search/?q=
+    prefix: /at
+  - name: Nixos
+    url: https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=
+    prefix: /nix
+  - name: Toppreise
+    url: https://www.toppreise.ch/produktsuche?q=
+    prefix: /tp
+  - name: Github
+    url: https://github.com/search?q=
+    prefix: /gh

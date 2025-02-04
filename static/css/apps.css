@@ -1,0 +1,39 @@
+.app-category {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    text-align: left;
+}
+.app-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.app-icon-container {
+    margin-right: 10px;
+}
+.app-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+.display-url {
+    font-size: smaller;
+    display: block;
+}
+.bookmarks {
+    text-align: left;
+}
+.bookmark-list {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.bookmark-link {
+    display: block;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer" />
+    <title>Dashboard</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.3/css/bulma.min.css" integrity="sha512-4EnjWdm80dyWrJ7rh/tlhNt6fJL52dSDSHNEqfdVmBLpJLPrRYnFa+Kn4ZZL+FRkDL5/7lAXuHylzJkpzkSM2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="static/css/apps.css"/>
+    <script>
+        const searchConfig = {{ toJSON .Searches }};
+    </script>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="field is-fullwidth">
+                <input class="input is-fullwidth search-input" type="text" placeholder="Search..." id="search-input" autofocus>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            {{- $appCategoriesLen := len .AppCategories }}
+            <div class="columns is-multiline">
+            {{- range .AppCategories}}
+                <div class="column {{ if gt $appCategoriesLen 4 }}is-one-quarters{{ else }}is-one-third{{ end }}">
+                    <div class="card" style="height: 100%;">
+                        <header class="card-header">
+                            <p class="card-header-title">{{ .Name }}</p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content is-flex is-flex-direction-column is-justify-content-space-between" style="height: 100%;">
+                        {{- range .Apps}}
+                            <div class="app-container">
+                                <div class="app-icon-container">
+                                    <span class="icon">
+                                        <i class="{{ .Icon }}"></i>
+                                    </span>
+                                </div>
+                                <div class="app-info-container">
+                                    <b class="app-title is-medium">{{ .Name }}</b>
+                                    <span class="display-url is-small"><a class="app-link" href="{{ .URL }}" target="_blank" rel="noopener">{{ .DisplayURL }}</a></span>
+                                </div>
+                            </div>
+                        {{- end}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{- end }}
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="columns is-multiline">
+            {{- range .BookmarkGroups }}
+                <div class="column is-3">
+                    <div class="card" style="height: 100%;">
+                        <header class="card-header">
+                            <p class="card-header-title">{{ .Name }}</p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content is-flex is-flex-direction-column is-justify-content-space-between" style="height: 100%;">
+                            {{- range .Bookmarks }}
+                                <a class="bookmark-link" href="{{ .URL }}" target="_blank" rel="noopener">{{ .Name }}</a>
+                            {{- end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{- end }}
+          </div>
+        </div>
+    </section>
+    <script src="static/js/apps.js"></script>
+</body>
+</html>
